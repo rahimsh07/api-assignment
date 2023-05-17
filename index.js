@@ -97,7 +97,7 @@ const getData = async (req, res) => {
 };
 
 const postData = async (req, res) => {
-  const { url } = req.body;
+  const { url } = req.body.payload;
 
   // checking there is any url
   if (!url) return res.json("Url is required");
